@@ -3,8 +3,7 @@ const { body } = require('express-validator');
 const { getAllUsers, getUserById, createUser, updateUser, deleteUser, addFriend, removeFriend } = require('../../controlers/userControler');
 const validateRequest = require('../../middleware/validation');
 
-router
-  .route('/')
+router.route('/')
   .get(getAllUsers)
   .post(
     body('username').trim().isLength({ min: 1 }).withMessage('Username cannot be empty'),
@@ -13,8 +12,7 @@ router
     createUser
   );
 
-router
-  .route('/:userId')
+router.route('/:userId')
   .get(getUserById)
   .put(
     body('username').trim().isLength({ min: 1 }).withMessage('Username cannot be empty'),
