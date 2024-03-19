@@ -40,6 +40,7 @@ You can test the API endpoints using tools like Postman or Insomnia. Here are th
 
 ## Walkthrough Video
 
+![Walkthrough](./imgs/Untitled_%20Mar%2019,%202024%201_51%20PM.gif)
 
 
 ## Technologies Used
